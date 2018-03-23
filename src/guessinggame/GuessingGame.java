@@ -25,20 +25,24 @@ public class GuessingGame {
         System.out.print("Guess the number: ");
         number = input.nextInt();
         
+        //This code will repeat when the number guessed is wrong
         while (number != randNum)
         {
             if (number > randNum)
             {
                 System.out.println("Too high!");
+                //Users to enter a new number
                 number = input.nextInt();
             }
             else
             {
                 System.out.println("Too low!");
+                //User enters a new number
                 number = input.nextInt();
             }
         }
         
+        //This message will display once the number guessed is right
         System.out.println("You got it");
  
         
